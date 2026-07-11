@@ -1,0 +1,91 @@
+print("MY DAILY ROUTINE")
+a = input("wake up time: ")
+b = input("time to go to school: ")
+c = input("when you eat breakfast: ")
+d = input("time to come home: ")
+e = input("time to eat lunch: ")
+f = input("day 1 study time start: ")
+g = input("day 1 study time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x1 = y // 60
+v1 = y % 60
+f = input("day 2 study time start: ")
+g = input("day 2 study time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x2 = y // 60
+v2 = y % 60
+f = input("day 3 study time start: ")
+g = input("day 3 study time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x3 = y // 60
+v3 = y % 60
+f = input("day 4 study time start: ")
+g = input("day 4 study time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x4 = y // 60
+v4 = y % 60
+f = input("day 5 study time start: ")
+g = input("day 5 time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x5 = y // 60
+v5 = y % 60
+f = input("day 6 study time start: ")
+g = input("day 6 study time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x6 = y // 60
+v6 = y % 60
+f = input("day 7 study time start: ")
+g = input("day 7 study time end: ")
+f1,f2 = f.split(":")
+g1,g2 = g.split(":")
+v = (int(f1)*60) + int(f2)
+x = (int(g1)*60) + int(g2)
+y = x - v
+x7 = y // 60
+v7 = y % 60
+
+h = input("play time start: ")
+i = input("play time stop: ")
+j = input("sleep time: ")
+print("hi!, this is my daily routine")
+print(f"so to start off, i wake up at around {a} in the morning.")
+print(f"then i get ready for school and leave at around {b} in the morning. ")
+print(f"i eat my breakfast in school around {c} in the morning")
+print(f"then after school ends at {d} p.m i eat my lunch at {e} and sleep")
+print(f"I do my homework and study from {f} to {g} or watch videos.")
+print(f"at evenings i go to play from{h} to {i}")
+print(f"after my dad returns then he checks my work then i eat my food and go to sleep around {j} .")
+print(f"study time of day 1: {x1}:{v1}")
+print(f"study time of day 2: {x2}:{v2}")
+print(f"study time of day 3: {x3}:{v3}")
+print(f"study time of day 4: {x4}:{v4}")
+print(f"study time of day 5: {x5}:{v5}")
+print(f"study time of day 6: {x6}:{v6}")
+print(f"study time of day 7: {x7}:{v7}")
+a_a = x1 + x2 + x3 + x4 + x5 + x6 + x7
+b_b = v1 + v2 + v3 + v4 + v5 + v6 + v7
+print(f"total study time in a week : {a_a}:{b_b}")
