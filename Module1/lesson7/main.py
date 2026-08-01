@@ -52,13 +52,27 @@ c=5
 # Step 10: Run the program with three different combinations of inputs to test all branches.
 print("=== Smart School Day Planner ===")
 day = input("what day of the week is it today?: ")
-weather = input("how is today's weather like?: ")
+weather = input("is it sunny?: ")
+weather2 = input("is it rainy?: ")
+weather3 = input("is it cloudy?: ")
+
 homework_status = input("what is the homework status?: ")
 if day == "sunday":
     print("weekend")
 elif day == "monday":
     print("monday")
-elif day == "monday":
-    print("")
-elif day == "monday":
-    print("")g
+elif day == "tuesday":
+    print("tuesday")
+elif day == "wednesday":
+    print("wednesday")
+elif day == "thursday":
+    print("thursday")
+elif day == "friday":
+    print("friday")
+elif day == "saturday":
+    print("day before weekend")
+if (weather and homework_status) == "yes":
+    print("the wether is sunny and the homework is done")
+else:
+    print("its either not a sunny day or the homework has ot been completed")
+if weather2 OR weather3
