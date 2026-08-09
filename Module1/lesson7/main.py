@@ -55,8 +55,7 @@ day = input("what day of the week is it today?: ")
 weather = input("is it sunny?: ")
 weather2 = input("is it rainy?: ")
 weather3 = input("is it cloudy?: ")
-
-homework_status = input("what is the homework status?: ")
+homework_status = input("what is the homework status?(completed or not completed): ")
 if day == "sunday":
     print("weekend")
 elif day == "monday":
@@ -71,8 +70,14 @@ elif day == "friday":
     print("friday")
 elif day == "saturday":
     print("day before weekend")
-if (weather and homework_status) == "yes":
-    print("the wether is sunny and the homework is done")
+if weather == "yes" and homework_status == "completed":
+    print("the whether is sunny and the homework is done")
 else:
     print("its either not a sunny day or the homework has ot been completed")
-if weather2 OR weather3
+if weather == "no" or (weather2 == "yes" or weather3 == "yes"):
+    print("dont forget to take an umbrella")
+if weather == "yes" and homework_status == "completed":
+    print("it is both a sunny day and the omework is done")
+else:
+    print("it is either that it is not a sunny day or the homework has not been done")
+print("plan completed! have wonderful day")

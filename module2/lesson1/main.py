@@ -22,12 +22,22 @@
 #3:- ~(not)
 #4:- ^(xor)
 #example:-
-a = 5
-b = 3
-print(a & b)
-print(a | b)
-print(~ b)
+# a = 5
+# b = 3
+# print(a & b)
+# print(a | b)
+# print(~ b)
 #a = 0101
 #b = 0011
 #Write a program to illustrate the use of 'is' identity operator
 #Write a program to show students’ grades by entering marks for five subjects, calculating the average, and checking the grade range using membership operators in and not in. For example, use in to check whether the average is in the range 91 to 100, 81 to 90, and so on, and use not in to validate marks outside the allowed range.
+#example:
+a = input("value a :")
+b = input("value b :")
+c = input("value c :")
+print(a is b)
+print(a is c)
+print(b is c)
+print(a is not b)
+print(a is not c)
+print(b is not c)
