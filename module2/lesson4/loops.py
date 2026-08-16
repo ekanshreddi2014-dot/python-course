@@ -17,8 +17,13 @@
 # Sum of whole numbers
 # Outline:
 # Write a program to calculate the sum of whole numbers.
-
-
+#solution1:
+num = int(input("give the range: "))
+num1 = 0
+for i in range(num):
+    num1 = i * (n + 1)/2
+print(num1)
+    
 # Activity 2:
 # Reverse a String
 # Outline:
@@ -37,3 +42,7 @@ print("Reversed String:",reversed_string)
 # reverse order
 # Outline:
 # Write a program to print the numbers in reverse order beginning from the number entered by the user. range(n,0,1)
+#solution3:
+a = int(input("range"))
+for i in range(a,-1,-1):
+    print(i)
