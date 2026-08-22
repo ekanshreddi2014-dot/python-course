@@ -1,25 +1,29 @@
-print("===librry visit planner===")
-a = input("what day it it today?")
-b = input("whatis today's wheather like today?(sunny/rainy)")
-c = input("does a book need to be returned?")
-dd = a.strip().lower().capitalize()
-ss = b.strip().lower().capitalize()
-aa = c.strip().lower().capitalize()
-if dd == "Saturday"or dd == "Sunday":
-    print("its a weekend")
-elif dd ==  "Monday"or dd == "Tuesday"or dd == "Wednesday"or dd == "Thursday"or dd == "Friday":
-    print("its a regular school day")
+print("=== Library Visit Planner ===")
+a = input("What day is it today? ")
+b = input("What is today's weather like? (sunny/rainy/cloudy): ")
+c = input("Does a book need to be returned? (yes/no): ")
+dd = a.strip().lower()
+ss = b.strip().lower()
+aa = c.strip().lower()
+if dd in ("saturday", "sunday"):
+    print("It's a weekend.")
+elif dd in ("monday", "tuesday", "wednesday", "thursday", "friday"):
+    print("It's a regular school day.")
 else:
-    print("please be more specific")
-if (ss == "sunny")and(aa == "yes"):
-    print("since the conditions are perfect you should go return the book")
-else:
-    print("you should stay at home today")
+    print("Please be more specific with the day.")
+if ss == "sunny" and aa == "yes":
+    print("Since the conditions are perfect, you should go return the book!")
 if ss == "rainy" or ss == "cloudy":
-    print("take an umbrella")
-if not(aa == "yes"):
-    print("no book needs to be returned today")
-if ss == ""
-
-    
-    
+    print("Take an umbrella!")
+if not (aa == "yes"):
+    print("No book needs to be returned today.")
+if ss == "rainy" and aa == "yes":
+    print("Best plan  : Visit the library carefully and return your book on time.")
+elif ss == "sunny" and aa == "yes" and not (dd in ("saturday", "sunday")):
+    print("Best plan  : Stop by the library after school and return your book.")
+elif dd in ("saturday", "sunday") and ss == "sunny":
+    print("Best plan  : Perfect day for a longer reading session at the library!")
+else:
+    print("Best plan  : Check your schedule and plan a simple library visit.")
+print()
+print("Library return planning complete!")
