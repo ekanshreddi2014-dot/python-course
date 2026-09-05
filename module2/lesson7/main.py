@@ -30,26 +30,14 @@
 #         num += 1
 #     print()
 #solution3:
-# i = 1
-# c = 5
-# for a in range(0,5):
-#     for b in range(0,i):
-#         print(" ")
-#         i = i + 1
-#     for e in range(0,c):
-#         print("*",end=" ")
-#         c = c - 1
-# i = 1
-# c = 5
-for a in range(0, 5):
-    # 1. Print all spaces for this row
-    for b in range(0, a):  # Uses 'a' directly to increase spaces each row
-        print(" ", end="")
+a = 2
+b = 1
+for i in range(0,a):
+    print(" ")
+    a = a - 1
+    for j in range(0,b):
+        b = b + 1
+        print("*")
+    print(end="")
 
-    # 2. Print all stars for this row
-    for e in range(0, c):
-        print("*", end=" ")
-
-    # 3. Move to the next line and decrease star count
-    print()
-    c = c - 1
+    
