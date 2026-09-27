@@ -17,21 +17,47 @@
 # print(greet("ekansh"))
 
 
-def add(a,b):
-     return a + b
-def subtract(a,b):
-     return a - b
-def calculate(a,b):
-    operation = input("what operation do you want to perform add or subtract: ").lower()
-    if operation == "add":
-        print(add(a,b))
-    elif operation == "subtract":
-        print(subtract(a,b))
-    else:
-        print("plese provide a valid operation")
-calculate(67,1)
+# def add(a,b):
+#      return a + b
+# def subtract(a,b):
+#      return a - b
+# def calculate(a,b):
+#     operation = input("what operation do you want to perform add or subtract: ").lower()
+#     if operation == "add":
+#         print(add(a,b))
+#     elif operation == "subtract":
+#         print(subtract(a,b))
+#     else:
+#         print("plese provide a valid operation")
+# calculate(67,1)
 #classroom activity:
 # My Lemonade Stand Calculator
 # Outline:
 # A Lemonade Stand Calculator that greets every customer, calculates the total cost and change due using functions with arguments and return statements, and prints a personalized thank you message alongside the final receipt.
 #solution:
+
+while 0 == 0:
+    print("hello!customer how many lemonades do you want?")
+    name = input("what s your name ? : ")
+    def a():
+        b = int(input("how many lemonades do you want? : "))
+        c = b * 10
+        return c
+    def d(c):
+        e = int(input("amount of money payed : "))
+        f = e - c
+        return f
+    g = a()
+    h = d(g)
+    print(h," = change")
+    print("thank you for buying at our shop,",name,"your bill is",g)
+    conformation = input("is there someone after you : ").lower()
+    if conformation == "yes":
+        continue
+    else:
+        break
+
+
+
+
+
